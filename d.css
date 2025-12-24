@@ -1,0 +1,103 @@
+/* Fondo adaptable para ordenador */
+body {
+    background-image: url(fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+/* Fondo para móviles */
+@media (max-width: 767px) {
+    body {
+        background-image: url(fondomovil.jpeg);
+    }
+}
+
+/* Resto de tu CSS... */
+
+/* Reproductor */
+.player {
+    width: 90%;
+    max-width: 360px;
+    background-color: rgba(24,24,24,0.85);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Portada */
+.cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("d.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Info */
+.info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+.info p {
+    font-size: 1rem;
+    margin: 5px 0 20px;
+    color: #e0e0e0;
+}
+
+/* Barra de progreso */
+#progress {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.controls button {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: #1db954;
+    cursor: pointer;
+    padding: 0;
+}
+
+#playPause {
+    width: 65px;
+    height: 65px;
+}
+
+/* Responsive para pantallas grandes */
+@media (min-width: 768px) {
+    .player {
+        max-width: 480px;
+    }
+    #playPause {
+        width: 75px;
+        height: 75px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>2 añitos together</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="d.css">
+</head>
+<body>
+
+<div class="player">
+    <div class="cover"></div>
+
+    <div class="info">
+        <h3>2 añitos together mai lof</h3>
+        <p>Para que puedas escucharlo siempre</p>
+    </div>
+
+    <audio id="audio" src="d.mp4"></audio>
+    <input type="range" id="progress" value="0">
+
+    <div class="controls">
+        <!-- Botón retroceder 10s -->
+        <button id="back10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="28" height="28">
+                <path d="M20 5v14l-8-7 8-7zm-10 0v14h-2V5h2z"/>
+            </svg>
+        </button>
+
+        <!-- Botón play/pause -->
+        <button id="playPause">
+            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="36" height="36">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+        </button>
+
+        <!-- Botón adelantar 10s -->
+        <button id="forward10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="28" height="28">
+                <path d="M4 5v14l8-7-8-7zm10 0v14h2V5h-2z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script src="d.js"></script>
+</body>
+</html>
