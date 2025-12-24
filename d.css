@@ -1,4 +1,3 @@
-/* Fondo adaptable para ordenador */
 body {
     background-image: url(fondo.jpeg);
     background-size: cover;
@@ -12,17 +11,11 @@ body {
     margin: 0;
     color: white;
 }
-
-/* Fondo para móviles */
 @media (max-width: 767px) {
     body {
         background-image: url(fondomovil.jpeg);
     }
 }
-
-/* Resto de tu CSS... */
-
-/* Reproductor */
 .player {
     width: 90%;
     max-width: 360px;
@@ -47,7 +40,7 @@ body {
     overflow: hidden;
 }
 
-/* Info */
+
 .info h3 {
     font-size: 1.2rem;
     margin: 0;
@@ -57,14 +50,11 @@ body {
     margin: 5px 0 20px;
     color: #e0e0e0;
 }
-
-/* Barra de progreso */
 #progress {
     width: 100%;
     margin-bottom: 20px;
 }
 
-/* Controles */
 .controls {
     display: flex;
     justify-content: center;
@@ -90,8 +80,6 @@ body {
     width: 65px;
     height: 65px;
 }
-
-/* Responsive para pantallas grandes */
 @media (min-width: 768px) {
     .player {
         max-width: 480px;
@@ -101,3 +89,4 @@ body {
         height: 75px;
     }
 }
+
