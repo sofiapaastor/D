@@ -5,7 +5,6 @@ const progress = document.getElementById("progress");
 const back10 = document.getElementById("back10");
 const forward10 = document.getElementById("forward10");
 
-// Play/Pause
 playPause.addEventListener("click", () => {
     if (audio.paused) {
         audio.play();
@@ -16,7 +15,6 @@ playPause.addEventListener("click", () => {
     }
 });
 
-// Barra de progreso
 audio.addEventListener("timeupdate", () => {
     progress.value = (audio.currentTime / audio.duration) * 100 || 0;
 });
@@ -25,12 +23,11 @@ progress.addEventListener("input", () => {
     audio.currentTime = (progress.value / 100) * audio.duration;
 });
 
-// Retroceder 10s
 back10.addEventListener("click", () => {
     audio.currentTime = Math.max(0, audio.currentTime - 10);
 });
 
-// Adelantar 10s
 forward10.addEventListener("click", () => {
     audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
 });
+
